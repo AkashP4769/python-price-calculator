@@ -1,14 +1,13 @@
-def calculate_total(price, quantity, tax_percent=5):
+def calculate_total(price, quantity):
     total = price * quantity
-    total += total * tax_percent / 100
     return total
+
 
 def main():
     price = 100
     quantity = 2
 
-    total = calculate_total(price, quantity, tax_percent=10)
-    
+    total = calculate_total(price, quantity)
     print(f"Total amount: {total}")
 
 
